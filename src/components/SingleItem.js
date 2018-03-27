@@ -3,14 +3,18 @@ import React, { Component } from 'react';
 class SingleItem extends Component {
     state = {}
     render() { 
+       
+        console.log("location state",this.props)
         return ( 
-            <div>
-                <h4> {this.props.title}</h4>
-                <p> Agency: {this.props.agency}</p>
-                <p> State: {this.props.state}</p>
-                <p> Address: {this.props.address}</p>
-                <p> Document Link: {this.props.document}</p>
-                <p> Category: {this.props.category}</p>
+            <div className="single_item">
+                <h4> Title: {this.props.location.state.title}</h4>
+                <p> <b>Agency:</b> {this.props.location.state.agency}</p>
+                <p> <b>Document Link: </b> 
+                <a href={this.props.location.state.document}>{this.props.location.state.document}</a> 
+                </p>
+                <p> <b>Date:</b> {this.props.location.state.date}</p>
+                <p> <b>Category:</b> {this.props.location.state.category}</p>
+                <button onClick={"hello"}> Save Record </button>
             </div>
          )
     }

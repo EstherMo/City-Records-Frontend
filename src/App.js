@@ -4,6 +4,7 @@ import "./App.css";
 
 import Home from "./components/Home";
 import List from "./components/List";
+import SingleItem from './components/SingleItem'
 
 class App extends Component {
   render() {
@@ -11,6 +12,7 @@ class App extends Component {
     const MeetingList = () => <List type={"Meeting"} />;
     const AwardsList = () => <List type={"Award"} />;
     const NoticesList = () => <List type={"Notice"} />;
+    
     return (
       <Router>
         <div>
@@ -19,6 +21,7 @@ class App extends Component {
             <Route exact path="/meetings" render={MeetingList} />
             <Route exact path="/awards" render={AwardsList} />
             <Route exact path="/notices" render={NoticesList} />
+            <Route name="item" path="/item/:itemId" component={SingleItem} />
           </Switch>
         </div>
       </Router>
