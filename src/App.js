@@ -1,19 +1,27 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import "./App.css";
+
+import Home from "./components/Home";
+import List from "./components/List";
 
 class App extends Component {
   render() {
+    //set the props to pass to each itemlist
+    const MeetingList = () => <List type={"Meeting"} />;
+    const AwardsList = () => <List type={"Award"} />;
+    const NoticesList = () => <List type={"Notice"} />;
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
+      <Router>
+        <div>
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route exact path="/meetings" render={MeetingList} />
+            <Route exact path="/awards" render={AwardsList} />
+            <Route exact path="/notices" render={NoticesList} />
+          </Switch>
+        </div>
+      </Router>
     );
   }
 }
