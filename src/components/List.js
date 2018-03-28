@@ -44,7 +44,7 @@ class List extends Component {
                   date: `${item.start_date}`
             }
             }}> 
-            <br/> <br/> {item.short_title}</Link>
+            <br/> <ul> <li>{item.short_title}</li></ul> </Link>
           );
 
         })}

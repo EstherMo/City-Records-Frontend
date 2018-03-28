@@ -27,7 +27,7 @@
 .meetings {
   height: 100pt;
   width: 25%;
-  background-color: aquamarine;
+  background-color: rgba(15, 253, 219,.50);
   color: black;
   text-align: center;
   margin: 80px 20px 10px 90px; 
@@ -46,10 +46,11 @@
   font: sans-serif;
   text-align: center;
   margin: 80px 20px 10px 20px; 
-  background-color: chartreuse;
+  background-color: rgba(1, 255, 9,.50);
   float: left;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
 .notices {
   padding: 20px;
   font-size: 2.0em;
@@ -60,7 +61,7 @@
   text-align: center;
   margin: 80px 20px 10px 20px; 
   float: left;
-  background-color: coral;
+  background-color: rgba(255, 113, 60,.50);
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .text{
@@ -86,11 +87,14 @@ a:hover {
   padding: 20px;
 
 }
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media only screen and (max-width: 600px) {
+  .menu {
+    font-size: 1em;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media only screen and (max-width: 500px) {
+  .menu {
+    font-size: .5em;
   }
 }

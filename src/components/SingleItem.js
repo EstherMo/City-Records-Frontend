@@ -14,7 +14,7 @@ class SingleItem extends Component {
         console.log("location state",this.props)
         return ( 
             <div className="single_item">
-                <h4> Title: {this.props.location.state.title}</h4>
+                <h2> {this.props.location.state.title}</h2>
                 <p> <b>Agency:</b> {this.props.location.state.agency}</p>
                 <p> <b>Document Link: </b> 
                 <a href={this.props.location.state.document}>{this.props.location.state.document}</a> 
