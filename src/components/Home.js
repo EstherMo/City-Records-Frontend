@@ -12,9 +12,10 @@ class Home extends Component {
           <h1 className="App-title">NYC City Records</h1>
         </header>
         <div className="menu">
-          <Link to="/meetings">Public Meetings </Link>
-          <Link to="/awards">Awards </Link>
-          <Link to="/notices">Court Notices </Link>
+          <div className="meetings"><Link to="/meetings">Public Meetings </Link></div>
+          <div className="awards"><Link to="/awards">Awards </Link></div>
+          <div className="notices"><Link to="/notices">Court Notices </Link></div>
+          
         </div>
       </div>
     );

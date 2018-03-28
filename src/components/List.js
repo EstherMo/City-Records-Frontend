@@ -30,8 +30,8 @@ class List extends Component {
   }
   render() {
     return (
-      <div>
-        <h1> {this.props.type} list</h1>
+      <div className="text list">
+        <h1> {this.props.type} list </h1>
         {this.state.itemDetails.map((item, index) => {
           return (
             <Link key={index} to={{
@@ -43,7 +43,8 @@ class List extends Component {
                   document:`${item.document_links}`,
                   date: `${item.start_date}`
             }
-            }}> <br/> {item.short_title}</Link>
+            }}> 
+            <br/> <br/> {item.short_title}</Link>
           );
 
         })}

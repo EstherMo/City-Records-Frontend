@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import axios from "axios";
+import { Link } from "react-router-dom";
+
 class SingleItem extends Component {
     state = {}
     saveRecord = () => {
@@ -20,6 +22,7 @@ class SingleItem extends Component {
                 <p> <b>Date:</b> {this.props.location.state.date}</p>
                 <p> <b>Category:</b> {this.props.location.state.category}</p>
                 <button onClick={this.saveRecord()}> Save Record </button>
+                <Link to="/">    Home</Link>
             </div>
          )
     }

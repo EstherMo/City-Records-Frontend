@@ -16,14 +16,76 @@
 
 .App-title {
   font-size: 2.5em;
-  color: rgba(15, 38, 92);
-  text-align: left;
+  color: white;
+  text-align: center;
 }
 
 .App-intro {
   font-size: large;
 }
 
+.meetings {
+  height: 100pt;
+  width: 25%;
+  background-color: aquamarine;
+  color: black;
+  text-align: center;
+  margin: 80px 20px 10px 90px; 
+  float: left;
+  padding: 20px;
+  font-size: 2.0em;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.awards {
+  color: black;
+  padding: 20px;
+  font-size: 2.0em;
+  height: 100pt;
+  width: 25%;
+  font: sans-serif;
+  text-align: center;
+  margin: 80px 20px 10px 20px; 
+  background-color: chartreuse;
+  float: left;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.notices {
+  padding: 20px;
+  font-size: 2.0em;
+  height: 100pt;
+  width: 25%;
+  color: black;
+  font: sans-serif;
+  text-align: center;
+  margin: 80px 20px 10px 20px; 
+  float: left;
+  background-color: coral;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.text{
+  color: white;
+  padding: 20px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body {
+  /* background-image: url("https://c1.staticflickr.com/1/126/387606063_408c203f6c_b.jpg"); */
+  background-color: #cccccc;
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%), url("https://c1.staticflickr.com/1/126/387606063_408c203f6c_b.jpg")
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+.single_item{
+  color: white;
+  padding: 20px;
+
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
