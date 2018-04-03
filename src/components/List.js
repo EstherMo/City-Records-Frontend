@@ -1,13 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
 import SingleItem from "./SingleItem";
-
-import {
-    BrowserRouter as Router,
-    Link,
-    Route,
-    Switch,
-  } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 class List extends Component {
   constructor() {
@@ -34,14 +28,15 @@ class List extends Component {
         <h1> {this.props.type} list </h1>
         {this.state.itemDetails.map((item, index) => {
           return (
-            <Link key={index} to={{
-                pathname: `/item/${index + 1}`,
+            <Link key={item.request_id} to={{
+                pathname: `/item/${item.request_id}`,
                 state: { 
                   title: `${item.short_title}`,
                   category: `${item.section_name}`,
                   agency: `${item.agency_name}`,
                   document:`${item.document_links}`,
-                  date: `${item.start_date}`
+                  date: `${item.start_date}`,
+                  id: `${item.request_id}`
             }
             }}> 
             <br/> <ul> <li>{item.short_title}</li></ul> </Link>
