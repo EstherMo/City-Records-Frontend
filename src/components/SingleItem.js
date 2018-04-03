@@ -60,7 +60,7 @@ class SingleItem extends Component {
                     <input type="text" name="link" value={this.state.link} onChange={this.handleChangeLink}/><br/> <br/>
                     Category:<br/>
                     <input type="text" name="category" value={this.state.category} onChange={this.handleChangeCategory}/> <br/> <br/>
-                    <input type="submit" value="Submit"/>
+                    <input type="submit" value="Edit Record"/>
                     </form>
                 <Link to="/">    Home</Link>
             </div>
