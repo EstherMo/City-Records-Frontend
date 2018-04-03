@@ -15,3 +15,6 @@
 - Creating a user login 
 - Implement a one to many relationship between users and records to be able to save separate records for each user. 
 
+## Deployed
+- This frontend is deployed on aws and works if the backend is running-  http://cityrecordsproject.s3-website-us-east-1.amazonaws.com/
+
